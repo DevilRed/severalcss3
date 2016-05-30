@@ -1,0 +1,1481 @@
+/*
+==============================================
+CSS3 ANIMATION CHEAT SHEET
+==============================================
+
+Made by Justin Aguilar
+
+www.justinaguilar.com/animations/
+
+Questions, comments, concerns, love letters:
+justin@justinaguilar.com
+==============================================
+*/
+/*
+==============================================
+slideDown
+==============================================
+*/
+/* line 22, _animationsVarios.scss */
+.slideDown {
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideDown {
+  /* line 36, _animationsVarios.scss */
+  0% {
+    transform: translateY(-100%);
+  }
+
+  /* line 39, _animationsVarios.scss */
+  50% {
+    transform: translateY(8%);
+  }
+
+  /* line 42, _animationsVarios.scss */
+  65% {
+    transform: translateY(-4%);
+  }
+
+  /* line 45, _animationsVarios.scss */
+  80% {
+    transform: translateY(4%);
+  }
+
+  /* line 48, _animationsVarios.scss */
+  95% {
+    transform: translateY(-2%);
+  }
+
+  /* line 51, _animationsVarios.scss */
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  /* line 57, _animationsVarios.scss */
+  0% {
+    -webkit-transform: translateY(-100%);
+  }
+
+  /* line 60, _animationsVarios.scss */
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+
+  /* line 63, _animationsVarios.scss */
+  65% {
+    -webkit-transform: translateY(-4%);
+  }
+
+  /* line 66, _animationsVarios.scss */
+  80% {
+    -webkit-transform: translateY(4%);
+  }
+
+  /* line 69, _animationsVarios.scss */
+  95% {
+    -webkit-transform: translateY(-2%);
+  }
+
+  /* line 72, _animationsVarios.scss */
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/*
+==============================================
+slideUp
+==============================================
+*/
+/* line 84, _animationsVarios.scss */
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideUp {
+  /* line 98, _animationsVarios.scss */
+  0% {
+    transform: translateY(100%);
+  }
+
+  /* line 101, _animationsVarios.scss */
+  50% {
+    transform: translateY(-8%);
+  }
+
+  /* line 104, _animationsVarios.scss */
+  65% {
+    transform: translateY(4%);
+  }
+
+  /* line 107, _animationsVarios.scss */
+  80% {
+    transform: translateY(-4%);
+  }
+
+  /* line 110, _animationsVarios.scss */
+  95% {
+    transform: translateY(2%);
+  }
+
+  /* line 113, _animationsVarios.scss */
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  /* line 119, _animationsVarios.scss */
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+
+  /* line 122, _animationsVarios.scss */
+  50% {
+    -webkit-transform: translateY(-8%);
+  }
+
+  /* line 125, _animationsVarios.scss */
+  65% {
+    -webkit-transform: translateY(4%);
+  }
+
+  /* line 128, _animationsVarios.scss */
+  80% {
+    -webkit-transform: translateY(-4%);
+  }
+
+  /* line 131, _animationsVarios.scss */
+  95% {
+    -webkit-transform: translateY(2%);
+  }
+
+  /* line 134, _animationsVarios.scss */
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/*
+==============================================
+slideLeft
+==============================================
+*/
+/* line 146, _animationsVarios.scss */
+.slideLeft {
+  animation-name: slideLeft;
+  -webkit-animation-name: slideLeft;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes slideLeft {
+  /* line 160, _animationsVarios.scss */
+  0% {
+    transform: translateX(150%);
+  }
+
+  /* line 163, _animationsVarios.scss */
+  50% {
+    ransform: translateX(-8%);
+  }
+
+  /* line 166, _animationsVarios.scss */
+  65% {
+    transform: translateX(4%);
+  }
+
+  /* line 169, _animationsVarios.scss */
+  80% {
+    transform: translateX(-4%);
+  }
+
+  /* line 172, _animationsVarios.scss */
+  95% {
+    transform: translateX(2%);
+  }
+
+  /* line 175, _animationsVarios.scss */
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  /* line 181, _animationsVarios.scss */
+  0% {
+    -webkit-transform: translateX(150%);
+  }
+
+  /* line 184, _animationsVarios.scss */
+  50% {
+    -webkit-transform: translateX(-8%);
+  }
+
+  /* line 187, _animationsVarios.scss */
+  65% {
+    -webkit-transform: translateX(4%);
+  }
+
+  /* line 190, _animationsVarios.scss */
+  80% {
+    -webkit-transform: translateX(-4%);
+  }
+
+  /* line 193, _animationsVarios.scss */
+  95% {
+    -webkit-transform: translateX(2%);
+  }
+
+  /* line 196, _animationsVarios.scss */
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+/*
+==============================================
+slideRight
+==============================================
+*/
+/* line 208, _animationsVarios.scss */
+.slideRight {
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes slideRight {
+  /* line 222, _animationsVarios.scss */
+  0% {
+    transform: translateX(-150%);
+  }
+
+  /* line 225, _animationsVarios.scss */
+  50% {
+    transform: translateX(8%);
+  }
+
+  /* line 228, _animationsVarios.scss */
+  65% {
+    transform: translateX(-4%);
+  }
+
+  /* line 231, _animationsVarios.scss */
+  80% {
+    transform: translateX(4%);
+  }
+
+  /* line 234, _animationsVarios.scss */
+  95% {
+    transform: translateX(-2%);
+  }
+
+  /* line 237, _animationsVarios.scss */
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  /* line 243, _animationsVarios.scss */
+  0% {
+    -webkit-transform: translateX(-150%);
+  }
+
+  /* line 246, _animationsVarios.scss */
+  50% {
+    -webkit-transform: translateX(8%);
+  }
+
+  /* line 249, _animationsVarios.scss */
+  65% {
+    -webkit-transform: translateX(-4%);
+  }
+
+  /* line 252, _animationsVarios.scss */
+  80% {
+    -webkit-transform: translateX(4%);
+  }
+
+  /* line 255, _animationsVarios.scss */
+  95% {
+    -webkit-transform: translateX(-2%);
+  }
+
+  /* line 258, _animationsVarios.scss */
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+/*
+==============================================
+slideExpandUp
+==============================================
+*/
+/* line 270, _animationsVarios.scss */
+.slideExpandUp {
+  animation-name: slideExpandUp;
+  -webkit-animation-name: slideExpandUp;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease -out;
+  visibility: visible !important;
+}
+
+@keyframes slideExpandUp {
+  /* line 284, _animationsVarios.scss */
+  0% {
+    transform: translateY(100%) scaleX(0.5);
+  }
+
+  /* line 287, _animationsVarios.scss */
+  30% {
+    transform: translateY(-8%) scaleX(0.5);
+  }
+
+  /* line 290, _animationsVarios.scss */
+  40% {
+    transform: translateY(2%) scaleX(0.5);
+  }
+
+  /* line 293, _animationsVarios.scss */
+  50% {
+    transform: translateY(0%) scaleX(1.1);
+  }
+
+  /* line 296, _animationsVarios.scss */
+  60% {
+    transform: translateY(0%) scaleX(0.9);
+  }
+
+  /* line 299, _animationsVarios.scss */
+  70% {
+    transform: translateY(0%) scaleX(1.05);
+  }
+
+  /* line 302, _animationsVarios.scss */
+  80% {
+    transform: translateY(0%) scaleX(0.95);
+  }
+
+  /* line 305, _animationsVarios.scss */
+  90% {
+    transform: translateY(0%) scaleX(1.02);
+  }
+
+  /* line 308, _animationsVarios.scss */
+  100% {
+    transform: translateY(0%) scaleX(1);
+  }
+}
+
+@-webkit-keyframes slideExpandUp {
+  /* line 314, _animationsVarios.scss */
+  0% {
+    -webkit-transform: translateY(100%) scaleX(0.5);
+  }
+
+  /* line 317, _animationsVarios.scss */
+  30% {
+    -webkit-transform: translateY(-8%) scaleX(0.5);
+  }
+
+  /* line 320, _animationsVarios.scss */
+  40% {
+    -webkit-transform: translateY(2%) scaleX(0.5);
+  }
+
+  /* line 323, _animationsVarios.scss */
+  50% {
+    -webkit-transform: translateY(0%) scaleX(1.1);
+  }
+
+  /* line 326, _animationsVarios.scss */
+  60% {
+    -webkit-transform: translateY(0%) scaleX(0.9);
+  }
+
+  /* line 329, _animationsVarios.scss */
+  70% {
+    -webkit-transform: translateY(0%) scaleX(1.05);
+  }
+
+  /* line 332, _animationsVarios.scss */
+  80% {
+    -webkit-transform: translateY(0%) scaleX(0.95);
+  }
+
+  /* line 335, _animationsVarios.scss */
+  90% {
+    -webkit-transform: translateY(0%) scaleX(1.02);
+  }
+
+  /* line 338, _animationsVarios.scss */
+  100% {
+    -webkit-transform: translateY(0%) scaleX(1);
+  }
+}
+
+/*
+==============================================
+expandUp
+==============================================
+*/
+/* line 350, _animationsVarios.scss */
+.expandUp {
+  animation-name: expandUp;
+  -webkit-animation-name: expandUp;
+  animation-duration: 0.7s;
+  -webkit-animation-duration: 0.7s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes expandUp {
+  /* line 364, _animationsVarios.scss */
+  0% {
+    transform: translateY(100%) scale(0.6) scaleY(0.5);
+  }
+
+  /* line 367, _animationsVarios.scss */
+  60% {
+    transform: translateY(-7%) scaleY(1.12);
+  }
+
+  /* line 370, _animationsVarios.scss */
+  75% {
+    transform: translateY(3%);
+  }
+
+  /* line 373, _animationsVarios.scss */
+  100% {
+    transform: translateY(0%) scale(1) scaleY(1);
+  }
+}
+
+@-webkit-keyframes expandUp {
+  /* line 379, _animationsVarios.scss */
+  0% {
+    -webkit-transform: translateY(100%) scale(0.6) scaleY(0.5);
+  }
+
+  /* line 382, _animationsVarios.scss */
+  60% {
+    -webkit-transform: translateY(-7%) scaleY(1.12);
+  }
+
+  /* line 385, _animationsVarios.scss */
+  75% {
+    -webkit-transform: translateY(3%);
+  }
+
+  /* line 388, _animationsVarios.scss */
+  100% {
+    -webkit-transform: translateY(0%) scale(1) scaleY(1);
+  }
+}
+
+/*
+==============================================
+fadeIn
+==============================================
+*/
+/* line 399, _animationsVarios.scss */
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  /* line 413, _animationsVarios.scss */
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+  }
+
+  /* line 417, _animationsVarios.scss */
+  60% {
+    transform: scale(1.1);
+  }
+
+  /* line 420, _animationsVarios.scss */
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  /* line 424, _animationsVarios.scss */
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 431, _animationsVarios.scss */
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+  }
+
+  /* line 435, _animationsVarios.scss */
+  60% {
+    -webkit-transform: scale(1.1);
+  }
+
+  /* line 438, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scale(0.9);
+    opacity: 1;
+  }
+
+  /* line 442, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*
+==============================================
+expandOpen
+==============================================
+*/
+/* line 455, _animationsVarios.scss */
+.expandOpen {
+  animation-name: expandOpen;
+  -webkit-animation-name: expandOpen;
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  visibility: visible !important;
+}
+
+@keyframes expandOpen {
+  /* line 469, _animationsVarios.scss */
+  0% {
+    transform: scale(1.8);
+  }
+
+  /* line 472, _animationsVarios.scss */
+  50% {
+    transform: scale(0.95);
+  }
+
+  /* line 475, _animationsVarios.scss */
+  80% {
+    transform: scale(1.05);
+  }
+
+  /* line 478, _animationsVarios.scss */
+  90% {
+    transform: scale(0.98);
+  }
+
+  /* line 481, _animationsVarios.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes expandOpen {
+  /* line 487, _animationsVarios.scss */
+  0% {
+    -webkit-transform: scale(1.8);
+  }
+
+  /* line 490, _animationsVarios.scss */
+  50% {
+    -webkit-transform: scale(0.95);
+  }
+
+  /* line 493, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scale(1.05);
+  }
+
+  /* line 496, _animationsVarios.scss */
+  90% {
+    -webkit-transform: scale(0.98);
+  }
+
+  /* line 499, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+/*
+==============================================
+bigEntrance
+==============================================
+*/
+/* line 511, _animationsVarios.scss */
+.bigEntrance {
+  animation-name: bigEntrance;
+  -webkit-animation-name: bigEntrance;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  visibility: visible !important;
+}
+
+@keyframes bigEntrance {
+  /* line 525, _animationsVarios.scss */
+  0% {
+    transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+    opacity: 0.2;
+  }
+
+  /* line 529, _animationsVarios.scss */
+  30% {
+    transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
+    opacity: 1;
+  }
+
+  /* line 533, _animationsVarios.scss */
+  45% {
+    transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  /* line 537, _animationsVarios.scss */
+  60% {
+    transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  /* line 541, _animationsVarios.scss */
+  75% {
+    transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  /* line 545, _animationsVarios.scss */
+  90% {
+    transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  /* line 549, _animationsVarios.scss */
+  100% {
+    transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bigEntrance {
+  /* line 556, _animationsVarios.scss */
+  0% {
+    -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+    opacity: 0.2;
+  }
+
+  /* line 560, _animationsVarios.scss */
+  30% {
+    -webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
+    opacity: 1;
+  }
+
+  /* line 564, _animationsVarios.scss */
+  45% {
+    -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  /* line 568, _animationsVarios.scss */
+  60% {
+    -webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  /* line 572, _animationsVarios.scss */
+  75% {
+    -webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  /* line 576, _animationsVarios.scss */
+  90% {
+    -webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+
+  /* line 580, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+}
+
+/*
+==============================================
+hatch
+==============================================
+*/
+/* line 592, _animationsVarios.scss */
+.hatch {
+  animation-name: hatch;
+  -webkit-animation-name: hatch;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  visibility: visible !important;
+}
+
+@keyframes hatch {
+  /* line 610, _animationsVarios.scss */
+  0% {
+    transform: rotate(0deg) scaleY(0.6);
+  }
+
+  /* line 613, _animationsVarios.scss */
+  20% {
+    transform: rotate(-2deg) scaleY(1.05);
+  }
+
+  /* line 616, _animationsVarios.scss */
+  35% {
+    transform: rotate(2deg) scaleY(1);
+  }
+
+  /* line 619, _animationsVarios.scss */
+  50% {
+    transform: rotate(-2deg);
+  }
+
+  /* line 622, _animationsVarios.scss */
+  65% {
+    transform: rotate(1deg);
+  }
+
+  /* line 625, _animationsVarios.scss */
+  80% {
+    transform: rotate(-1deg);
+  }
+
+  /* line 628, _animationsVarios.scss */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes hatch {
+  /* line 634, _animationsVarios.scss */
+  0% {
+    -webkit-transform: rotate(0deg) scaleY(0.6);
+  }
+
+  /* line 637, _animationsVarios.scss */
+  20% {
+    -webkit-transform: rotate(-2deg) scaleY(1.05);
+  }
+
+  /* line 640, _animationsVarios.scss */
+  35% {
+    -webkit-transform: rotate(2deg) scaleY(1);
+  }
+
+  /* line 643, _animationsVarios.scss */
+  50% {
+    -webkit-transform: rotate(-2deg);
+  }
+
+  /* line 646, _animationsVarios.scss */
+  65% {
+    -webkit-transform: rotate(1deg);
+  }
+
+  /* line 649, _animationsVarios.scss */
+  80% {
+    -webkit-transform: rotate(-1deg);
+  }
+
+  /* line 652, _animationsVarios.scss */
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+/*
+==============================================
+bounce
+==============================================
+*/
+/* line 665, _animationsVarios.scss */
+.bounce {
+  animation-name: bounce;
+  -webkit-animation-name: bounce;
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+}
+
+@keyframes bounce {
+  /* line 681, _animationsVarios.scss */
+  0% {
+    transform: translateY(0%) scaleY(0.6);
+  }
+
+  /* line 684, _animationsVarios.scss */
+  60% {
+    transform: translateY(-100%) scaleY(1.1);
+  }
+
+  /* line 687, _animationsVarios.scss */
+  70% {
+    transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+  }
+
+  /* line 690, _animationsVarios.scss */
+  80% {
+    transform: translateY(0%) scaleY(1.05) scaleX(1);
+  }
+
+  /* line 693, _animationsVarios.scss */
+  90% {
+    transform: translateY(0%) scaleY(0.95) scaleX(1);
+  }
+
+  /* line 696, _animationsVarios.scss */
+  100% {
+    transform: translateY(0%) scaleY(1) scaleX(1);
+  }
+}
+
+@-webkit-keyframes bounce {
+  /* line 702, _animationsVarios.scss */
+  0% {
+    -webkit-transform: translateY(0%) scaleY(0.6);
+  }
+
+  /* line 705, _animationsVarios.scss */
+  60% {
+    -webkit-transform: translateY(-100%) scaleY(1.1);
+  }
+
+  /* line 708, _animationsVarios.scss */
+  70% {
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+  }
+
+  /* line 711, _animationsVarios.scss */
+  80% {
+    -webkit-transform: translateY(0%) scaleY(1.05) scaleX(1);
+  }
+
+  /* line 714, _animationsVarios.scss */
+  90% {
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1);
+  }
+
+  /* line 717, _animationsVarios.scss */
+  100% {
+    -webkit-transform: translateY(0%) scaleY(1) scaleX(1);
+  }
+}
+
+/*
+==============================================
+pulse
+==============================================
+*/
+/* line 729, _animationsVarios.scss */
+.pulse {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  /* line 741, _animationsVarios.scss */
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+
+  /* line 745, _animationsVarios.scss */
+  50% {
+    ransform: scale(1);
+    opacity: 1;
+  }
+
+  /* line 749, _animationsVarios.scss */
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes pulse {
+  /* line 756, _animationsVarios.scss */
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
+
+  /* line 760, _animationsVarios.scss */
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+
+  /* line 764, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+/*
+==============================================
+floating
+==============================================
+*/
+/* line 776, _animationsVarios.scss */
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  /* line 788, _animationsVarios.scss */
+  0% {
+    transform: translateY(0%);
+  }
+
+  /* line 791, _animationsVarios.scss */
+  50% {
+    transform: translateY(8%);
+  }
+
+  /* line 794, _animationsVarios.scss */
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  /* line 800, _animationsVarios.scss */
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+
+  /* line 803, _animationsVarios.scss */
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+
+  /* line 806, _animationsVarios.scss */
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/*
+==============================================
+tossing
+==============================================
+*/
+/* line 817, _animationsVarios.scss */
+.tossing {
+  animation-name: tossing;
+  -webkit-animation-name: tossing;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+  /* line 829, _animationsVarios.scss */
+  0% {
+    transform: rotate(-4deg);
+  }
+
+  /* line 832, _animationsVarios.scss */
+  50% {
+    transform: rotate(4deg);
+  }
+
+  /* line 835, _animationsVarios.scss */
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+
+@-webkit-keyframes tossing {
+  /* line 841, _animationsVarios.scss */
+  0% {
+    -webkit-transform: rotate(-4deg);
+  }
+
+  /* line 844, _animationsVarios.scss */
+  50% {
+    -webkit-transform: rotate(4deg);
+  }
+
+  /* line 847, _animationsVarios.scss */
+  100% {
+    -webkit-transform: rotate(-4deg);
+  }
+}
+
+/*
+==============================================
+pullUp
+==============================================
+*/
+/* line 858, _animationsVarios.scss */
+.pullUp {
+  animation-name: pullUp;
+  -webkit-animation-name: pullUp;
+  animation-duration: 1.1s;
+  -webkit-animation-duration: 1.1s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+}
+
+@keyframes pullUp {
+  /* line 874, _animationsVarios.scss */
+  0% {
+    transform: scaleY(0.1);
+  }
+
+  /* line 877, _animationsVarios.scss */
+  40% {
+    transform: scaleY(1.02);
+  }
+
+  /* line 880, _animationsVarios.scss */
+  60% {
+    transform: scaleY(0.98);
+  }
+
+  /* line 883, _animationsVarios.scss */
+  80% {
+    transform: scaleY(1.01);
+  }
+
+  /* line 886, _animationsVarios.scss */
+  100% {
+    transform: scaleY(0.98);
+  }
+
+  /* line 889, _animationsVarios.scss */
+  80% {
+    transform: scaleY(1.01);
+  }
+
+  /* line 892, _animationsVarios.scss */
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes pullUp {
+  /* line 898, _animationsVarios.scss */
+  0% {
+    -webkit-transform: scaleY(0.1);
+  }
+
+  /* line 901, _animationsVarios.scss */
+  40% {
+    -webkit-transform: scaleY(1.02);
+  }
+
+  /* line 904, _animationsVarios.scss */
+  60% {
+    -webkit-transform: scaleY(0.98);
+  }
+
+  /* line 907, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  /* line 910, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scaleY(0.98);
+  }
+
+  /* line 913, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  /* line 916, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+/*
+==============================================
+pullDown
+==============================================
+*/
+/* line 927, _animationsVarios.scss */
+.pullDown {
+  animation-name: pullDown;
+  -webkit-animation-name: pullDown;
+  animation-duration: 1.1s;
+  -webkit-animation-duration: 1.1s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+}
+
+@keyframes pullDown {
+  /* line 943, _animationsVarios.scss */
+  0% {
+    transform: scaleY(0.1);
+  }
+
+  /* line 946, _animationsVarios.scss */
+  40% {
+    transform: scaleY(1.02);
+  }
+
+  /* line 949, _animationsVarios.scss */
+  60% {
+    transform: scaleY(0.98);
+  }
+
+  /* line 952, _animationsVarios.scss */
+  80% {
+    transform: scaleY(1.01);
+  }
+
+  /* line 955, _animationsVarios.scss */
+  100% {
+    transform: scaleY(0.98);
+  }
+
+  /* line 958, _animationsVarios.scss */
+  80% {
+    transform: scaleY(1.01);
+  }
+
+  /* line 961, _animationsVarios.scss */
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes pullDown {
+  /* line 967, _animationsVarios.scss */
+  0% {
+    -webkit-transform: scaleY(0.1);
+  }
+
+  /* line 970, _animationsVarios.scss */
+  40% {
+    -webkit-transform: scaleY(1.02);
+  }
+
+  /* line 973, _animationsVarios.scss */
+  60% {
+    -webkit-transform: scaleY(0.98);
+  }
+
+  /* line 976, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  /* line 979, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scaleY(0.98);
+  }
+
+  /* line 982, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  /* line 985, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+/*
+==============================================
+stretchLeft
+==============================================
+*/
+/* line 996, _animationsVarios.scss */
+.stretchLeft {
+  animation-name: stretchLeft;
+  -webkit-animation-name: stretchLeft;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+}
+
+@keyframes stretchLeft {
+  /* line 1012, _animationsVarios.scss */
+  0% {
+    transform: scaleX(0.3);
+  }
+
+  /* line 1015, _animationsVarios.scss */
+  40% {
+    transform: scaleX(1.02);
+  }
+
+  /* line 1018, _animationsVarios.scss */
+  60% {
+    transform: scaleX(0.98);
+  }
+
+  /* line 1021, _animationsVarios.scss */
+  80% {
+    transform: scaleX(1.01);
+  }
+
+  /* line 1024, _animationsVarios.scss */
+  100% {
+    transform: scaleX(0.98);
+  }
+
+  /* line 1027, _animationsVarios.scss */
+  80% {
+    transform: scaleX(1.01);
+  }
+
+  /* line 1030, _animationsVarios.scss */
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes stretchLeft {
+  /* line 1036, _animationsVarios.scss */
+  0% {
+    -webkit-transform: scaleX(0.3);
+  }
+
+  /* line 1039, _animationsVarios.scss */
+  40% {
+    -webkit-transform: scaleX(1.02);
+  }
+
+  /* line 1042, _animationsVarios.scss */
+  60% {
+    -webkit-transform: scaleX(0.98);
+  }
+
+  /* line 1045, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scaleX(1.01);
+  }
+
+  /* line 1048, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scaleX(0.98);
+  }
+
+  /* line 1051, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scaleX(1.01);
+  }
+
+  /* line 1054, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+
+/*
+==============================================
+stretchRight
+==============================================
+*/
+/* line 1065, _animationsVarios.scss */
+.stretchRight {
+  animation-name: stretchRight;
+  -webkit-animation-name: stretchRight;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+}
+
+@keyframes stretchRight {
+  /* line 1081, _animationsVarios.scss */
+  0% {
+    transform: scaleX(0.3);
+  }
+
+  /* line 1084, _animationsVarios.scss */
+  40% {
+    transform: scaleX(1.02);
+  }
+
+  /* line 1087, _animationsVarios.scss */
+  60% {
+    transform: scaleX(0.98);
+  }
+
+  /* line 1090, _animationsVarios.scss */
+  80% {
+    transform: scaleX(1.01);
+  }
+
+  /* line 1093, _animationsVarios.scss */
+  100% {
+    transform: scaleX(0.98);
+  }
+
+  /* line 1096, _animationsVarios.scss */
+  80% {
+    transform: scaleX(1.01);
+  }
+
+  /* line 1099, _animationsVarios.scss */
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes stretchRight {
+  /* line 1105, _animationsVarios.scss */
+  0% {
+    -webkit-transform: scaleX(0.3);
+  }
+
+  /* line 1108, _animationsVarios.scss */
+  40% {
+    -webkit-transform: scaleX(1.02);
+  }
+
+  /* line 1111, _animationsVarios.scss */
+  60% {
+    -webkit-transform: scaleX(0.98);
+  }
+
+  /* line 1114, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scaleX(1.01);
+  }
+
+  /* line 1117, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scaleX(0.98);
+  }
+
+  /* line 1120, _animationsVarios.scss */
+  80% {
+    -webkit-transform: scaleX(1.01);
+  }
+
+  /* line 1123, _animationsVarios.scss */
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+
+/* line 12, style.scss */
+.border {
+  border: 2px solid #ffa90a;
+  width: 20%;
+}
+
+/* line 16, style.scss */
+.center {
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid lightblue;
+}
+
+/* line 21, style.scss */
+#one {
+  border: 2px solid black;
+  width: 48%;
+  float: left;
+  margin: 0;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  /* line 21, style.scss */
+  #one {
+    width: 100%;
+  }
+}
+
+/* line 32, style.scss */
+#two {
+  border: 2px solid #f20000;
+  width: 48%;
+  margin: 0;
+  float: left;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  /* line 32, style.scss */
+  #two {
+    width: 100%;
+  }
+}

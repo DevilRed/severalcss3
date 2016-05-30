@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Efecto original</title>
+	<style type="text/css">
+		.view { /* el DIV principal al le damos la misma dimensión que a la imagen a usar, en este caso, 300x188 */
+			border: 10px solid #FFF;
+			cursor: pointer;
+			height: 188px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			width: 300px;
+		  }
+		  .view img { /* la imagen */
+			display: block;
+			position: relative;
+			-moz-transition: all 0.5s ease-out;	/* transicion para todos los efectos */
+			-webkit-transition: all 0.5s ease-out;
+			-o-transition: all 0.5s ease-out;
+			transition: all 0.5s ease-out;
+			opacity: 1;
+			filter: alpha(opacity=100);
+		  }
+		  .view:hover img { /* se "anima cuando ponesmos el cursor encima */
+			-moz-transform: rotate(720deg) scale(0);	/* giramos la img y se usa scale a 0 para ke no se vea */
+			-webkit-transform: rotate(720deg) scale(0); /* se puede usar varios valores en transform */
+			-o-transform: rotate(720deg) scale(0);
+			-ms-transform: rotate(720deg) scale(0);
+			transform: rotate(720deg) scale(0);
+			opacity: 0;	/* para asegurar se coloca opacity en 0, osea se vuelve a la img totalmente transparente */
+			filter: alpha(opacity=0);
+		  }
+		  .view .mask { /* el DIV oculto con los textos */
+			background-color: #ABC;
+			height: 188px;
+			position: absolute;	/* position absolute para facilitar posicionamiento */
+			left: 0;
+			top: 0;
+			overflow: hidden;
+			width: 300px;
+			-moz-transform: rotate(0deg) scale(1);	/* no se rota y se usa scale a 1 */
+			-webkit-transform: rotate(0deg) scale(1);
+			-o-transform: rotate(0deg) scale(1);
+			-ms-transform: rotate(0deg) scale(1);
+			transform: rotate(0deg) scale(1);
+			-moz-transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+			-o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+			opacity: 0;	/* seria un ekivalente a display none */
+			filter: alpha(opacity=0);
+		  }
+		  .view:hover .mask { /* se muestra el DIV, efecto ke muestra */
+			-moz-transform: translateY(0px) rotate(0deg);	/* ohh translateY solo en el eje Y */
+			-webkit-transform: translateY(0px) rotate(0deg);
+			-o-transform: translateY(0px) rotate(0deg);
+			-ms-transform: translateY(0px) rotate(0deg);
+			transform: translateY(0px) rotate(0deg);
+			-moz-transition-delay: 0.4s;	/* delay para la transicion */
+			-webkit-transition-delay: 0.4s;
+			-o-transition-delay: 0.4s;
+			transition-delay: 0.4s;
+			opacity: 1;
+			filter: alpha(opacity=100);
+		  }
+		  .view h4 { /* el título que permanece oculto */
+			background-color: rgba(255, 255, 255, 0.5);
+			color: #FFF;
+			text-align: center;
+			position: relative;
+			font-family: Georgia;
+			font-size: 20px;
+			margin: 20px 0 0 0;
+			padding: 5px 0;
+			text-shadow: 0 3px 1px #000;
+			-moz-transform: translateY(-200px);	/* el efecto ke cae de arriba, osea el titulo se posiciona fuera del div */
+			-webkit-transform: translateY(-200px);
+			-o-transform: translateY(-200px);
+			-ms-transform: translateY(-200px);
+			transform: translateY(-200px);
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		  }
+		  .view:hover h4 { /* se muestra el título */
+			-moz-transform: translateY(0px);	/* se vuelve a su posicion original */
+			-webkit-transform: translateY(0px);
+			-o-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+			transform: translateY(0px);
+			-moz-transition-delay: 0.7s;
+			-webkit-transition-delay: 0.7s;
+			-o-transition-delay: 0.7s;
+			transition-delay: 0.7s;
+		  }
+		  .view p { /* el texto que permanece oculto */
+			color: #000;
+			font-family: Tahoma;
+			font-size: 13px;
+			margin: 0;
+			padding: 15px;
+			position: relative;
+			text-align: center;
+			text-shadow: 1px 1px 1px #FFF;
+			-moz-transform: translateY(-200px);
+			-webkit-transform: translateY(-200px);
+			-o-transform: translateY(-200px);
+			-ms-transform: translateY(-200px);
+			transform: translateY(-200px);
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		  }
+		  .view:hover p { /* se muestra el texto */
+			-moz-transform: translateY(0px);
+			-webkit-transform: translateY(0px);
+			-o-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+			transform: translateY(0px);
+			-moz-transition-delay: 0.6s;
+			-webkit-transition-delay: 0.6s;
+			-o-transition-delay: 0.6s;
+			transition-delay: 0.6s;
+		  }
+		  .view a.info { /* el enlace que permanece oculto */
+			background-color: #456;
+			border-radius: 5px;
+			box-shadow: 0 0 2px #FFF, 0 0 5px #FFF inset;
+			color: #FFF;
+			display: inline-block;
+			padding: 7px 14px;
+			text-decoration: none;
+			-moz-transform: translateY(-200px);
+			-webkit-transform: translateY(-200px);
+			-o-transform: translateY(-200px);
+			-ms-transform: translateY(-200px);
+			transform: translateY(-200px);
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		  }
+		  .view a.info:hover {
+			box-shadow: 0 0 5px #FFF;
+		  }
+		  .view:hover a.info { /* se muestra el enlace */
+			-moz-transform: translateY(0px);
+			-webkit-transform: translateY(0px);
+			-o-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+			transform: translateY(0px);
+			-moz-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			-o-transition-delay: 0.5s;
+			transition-delay: 0.5s;
+		  }
+	</style>
+</head>
+<body>
+  <div class="view">
+	<img src="humor.jpg" />
+	  <div class="mask"><!-- este div estara oculto, aparece en el hover -->
+		<h4> el título </h4>
+		<p> el texto </p>
+		<a href="#" class="info"> LEER MAS </a>
+	  </div>
+</div><!-- view -->
+</body>
+</html>

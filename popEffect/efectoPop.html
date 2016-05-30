@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>POP</title>
+	<style>
+		#cajapop{
+			width: 30%;
+			height: 300px;
+			background: linear-gradient(white, white 50%, black 50%, black);
+			background-size: 100% 200%;
+			background-position: 0 0;
+			box-shadow: 0 0 30px blue;
+			transition: all ease-in 1s;
+		}
+		#cajapop:hover{
+			background-position: 0 100%;
+			box-shadow: 0 0 30px green;
+		}
+		#cajapop h1, #cajapop p{
+			transition: all ease-out 2s;
+		}
+		#cajapop:hover h1, #cajapop:hover p{
+			color: white;
+			-webkit-transform: translate(50%, 150%);
+			/*-webkit-transform: rotate(720deg);*/			
+		}
+		
+		/* animacion */
+		#cajaAnima{
+			border: 2px solid red;
+			border-radius: 8px;
+			width: 30%;
+
+			-webkit-animation-name: animacionCustom;
+			-webkit-animation-delay: 0;
+			-webkit-animation-duration: 3s;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-iteration-count: infinite;
+			position: relative;
+		}		
+		@-webkit-keyframes animacionCustom{
+			from{
+				left: 0;
+			}
+			to{
+				left: 70%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="cajapop">
+		<h1>El titulo</h1>
+		<p>el contenido bla bla bla</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div id="cajaAnima">
+		<h2>Esta caja sera animada</h2>
+	</div>
+</body>
+</html>

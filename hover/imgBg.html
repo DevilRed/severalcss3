@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Efecto hover interesante</title>
+	<style type="text/css">
+		.ejemplo{
+			margin:30px auto;
+			text-align:center;
+		}
+		.ejemplo a span{
+			/* el texto y el recuadro */
+			border:10px solid white;
+			color:#fff;
+			font-size:120px;
+			line-height:200px;
+			text-shadow:2px 2px 5px rgba(0,0,0,0,4);
+			/* el tamaño */
+			display:inline-block;
+			position:relative;
+			height:200px;
+			width:300px;
+			/* la imagen de fondo (para este caso mide 550x485) */
+			background:transparent url('1.jpg') no-repeat 50% 0%;
+			/* se la redimensiona y deforma un poco */
+			background-size:500px 400px;
+			/* la transicion del texto EFECTO DEL TEXTO, una transicion es para pasar de un valor a otro de modo ke no sea brusco */
+			-moz-transition: all 0.5s;
+			-webkit-transition: all 1s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+		.ejemplo a span:hover{
+			/* efecto hover sobre el texto */
+			/*color:rgba(255,255,255,0.4);
+			text-shadow: 0 0 5px rgba(0,0,0,0.1);*/
+			color:red;
+			z-index:10;
+			/* LA ANIMACION */
+			-moz-animation:moveImg 10s linear infinite forwards;	/* moveImg es una funcion ke se define */
+			-webkit-animation:moveImg 10s linear infinite forwards;
+			-o-animation:moveImg 10s linear infinite forwards;
+			animation:moveImg 10s linear infinite forwards;
+		}
+		
+		@-moz-keyframes moveImg{	/* se colocan prefijos para los navegadores */
+			0%{background-position:50% 0%;} /* (x,y) */
+			50%{background-position:50% 100%;}
+			100%{background-position: 50% 0%;}
+		}
+		@-webkit-keyframes moveImg{	/* se colocan prefijos para los navegadores */
+			0%{background-position:50% 0%;}
+			50%{background-position:50% 100%;}
+			100%{background-position: 50% 0%;}
+		}
+		@-o-keyframes moveImg{	/* se colocan prefijos para los navegadores */
+			0%{background-position:50% 0%;}
+			50%{background-position:50% 100%;}
+			100%{background-position: 50% 0%;}
+		}
+		@keyframes moveImg{	/* se colocan prefijos para los navegadores */
+			0%{background-position:50% 0%;}
+			50%{background-position:50% 100%;}
+			100%{background-position: 50% 0%;}
+		}
+	</style>
+</head>
+<body>
+	<div class="ejemplo"><a href="#"><span>texto</span></a></div>
+</body>
+</html>

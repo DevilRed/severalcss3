@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Hover en enlaces</title>
+	<style type="text/css">
+		#uno:hover:after{
+			content:"["attr(href)"]";
+			color:LightBlue;
+			font-size:1.5em;
+		}
+		#dos{
+			position:relative;
+		}
+		#dos:hover:after{
+			background-color:CornflowerBlue;
+			border-radius:5px;
+			color:white;
+			content:attr(rel); /* esta propiedad esta interesting permite acceder a cualkiera de sus propiedad de la etiketa, por ejemplo se podria usar "title" en lugar de "rel" */
+			font-size:12px;
+			left:2em;
+			top:-1.5em;
+			padding:2px 10px;
+			position:absolute;
+			white-space:pre;
+		}
+		#uy{
+			margin:0 auto;
+			width:600px;
+			margin-bottom:100px;
+		}
+		#uy2{
+			margin:0 auto;
+			width:420px;
+		}
+		
+		/* pesos CSS */
+		#nicanor p{/* 0101 */
+			color: yellow;
+		}
+		.paragraph{/* peso 0010 */
+			color: red;
+		}
+		.prueba-peso p{/* peso 0011 */
+			color: blue;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div id="uy">
+		texto cualkiera con <a href="http://www.google.com/uy" id="uno">Enlace cualkiera</a> ke muestra la URL de referencia
+	</div>
+	
+	<div id="uy2">
+		este <a href="#" id="dos" rel="tooltip del enlace">enlace</a> muestra un tooltip adicional usando el atributo rel del enlace
+	</div>
+	<br><br><br>
+	<div class="prueba-peso" id="nicanor">
+		<p class="paragraph">cual regla se aplica</p>
+	</div>
+</body>
+</html>
